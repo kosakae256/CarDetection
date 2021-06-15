@@ -44,7 +44,7 @@ def detect_car(readpath,correct,failedpath,framepath,write_filename):
         labelclass = output['detection_classes'][i]
 
         # この数値以上の信頼度なら通る
-        if score < 0.3:
+        if score < 0.7:
             continue
         
         #車なら
